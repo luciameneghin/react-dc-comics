@@ -19,15 +19,13 @@ header {
   align-items: center;
 }
 
-header .list-header {
-  list-style: none;
-}
-
-header .list-header lu {
+header .list-header ul {
   display: flex;
+  list-style: none;
+  margin-top: 20px;
 }
 
-header .list-header lu li a {
+header .list-header ul li a {
   margin: 15px;
   color: black;
   text-transform: uppercase;
@@ -35,11 +33,14 @@ header .list-header lu li a {
   font-size: 1.1em;
 }
 
-header .list-header lu li a:hover {
+header .list-header ul li a:hover,
+header .list-header ul li a:active {
   color: #0082F9;
-  padding-bottom: 25px;
+  padding-bottom: 52px;
   border-bottom: 5px solid #0082F9;
 }
+
+
 
 /* main */
 
@@ -58,6 +59,8 @@ main .info-main {
 
 main .info-main ul {
   display: flex;
+  position: relative;
+  z-index: 200;
   justify-content: space-between;
   list-style: none;
   text-align: center;
@@ -79,4 +82,79 @@ main .info-main ul li a {
 main .info-main ul li a img {
   height: 50px;
   padding-right: 10px;
+}
+
+/* footer */
+footer {
+  background-image: url(src/img/footer-bg.jpg);
+  object-fit: cover;
+}
+
+footer .section-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+footer .section-footer .list-footer {
+  display: flex;
+}
+
+footer .section-footer .img-footer {
+  margin: -100px;
+}
+
+footer .section-footer ul {
+  list-style: none;
+}
+
+footer .section-footer ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .section-footer ul li a h4 {
+  color: white;
+  margin-top: 20px;
+}
+
+footer .section-footer ul li a li {
+  color: lightgray;
+  font-weight: 100;
+}
+
+footer .btn-social-footer {
+  position: relative;
+  z-index: 100;
+  background-color: #303030;
+  padding: 50px;
+}
+
+footer .btn-social-footer .btn-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .btn-social-footer .btn-social button {
+  text-transform: uppercase;
+  background-color: #303030;
+  border-color: #0082F9;
+  color: white;
+  font-size: 1.5em;
+  padding: 5px 15px;
+}
+
+footer .btn-social-footer .btn-social .social {
+  margin-top: 10px;
+}
+
+footer .btn-social-footer .btn-social .social img {
+  margin-right: 20px;
+}
+
+footer .btn-social-footer .btn-social .social span {
+  color: #0082F9;
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 1.7em;
 }

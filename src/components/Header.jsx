@@ -1,8 +1,8 @@
 
 const Header = () => {
   return (
-    <header>
-      <div className="logo-header">
+    <header className="container">
+      <div>
         <img src="src/img/dc-logo.png" alt="logo DC" />
       </div>
       <div className="list-header">

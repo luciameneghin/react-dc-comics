@@ -1,12 +1,19 @@
 body {
-  max-width: 1100px;
-  margin: 0 auto;
   font-family: Teko;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
 
 /* header */
 header {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,4 +39,44 @@ header .list-header lu li a:hover {
   color: #0082F9;
   padding-bottom: 25px;
   border-bottom: 5px solid #0082F9;
+}
+
+/* main */
+
+main .content-main {
+  background-color: #1C1C1C;
+  padding: 30px;
+  margin: 0 auto;
+  color: white;
+  font-size: 3rem;
+}
+
+main .info-main {
+  background-color: #0082F9;
+  height: 200px;
+}
+
+main .info-main ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
+main .info-main ul li {
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+main .info-main ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+main .info-main ul li a img {
+  height: 50px;
+  padding-right: 10px;
 }

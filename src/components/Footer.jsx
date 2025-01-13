@@ -26,7 +26,7 @@ const Footer = () => {
             <li><a href="#">
               <h4>dc</h4>
               <li>term of use</li>
-              <li>privacy policy(new)</li>
+              <li>privacy policy (new)</li>
               <li>ad choices</li>
               <li>advertising</li>
               <li>jobs</li>

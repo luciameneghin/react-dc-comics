@@ -54,7 +54,7 @@ main .content-main {
 
 main .info-main {
   background-color: #0082F9;
-  height: 200px;
+  height: 160px;
 }
 
 main .info-main ul {
@@ -67,7 +67,7 @@ main .info-main ul {
 }
 
 main .info-main ul li {
-  padding: 20px 0;
+  padding: 10px 0;
   margin-top: 50px;
 }
 
@@ -110,16 +110,17 @@ footer .section-footer ul {
 
 footer .section-footer ul li a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 footer .section-footer ul li a h4 {
+  text-transform: uppercase;
   color: white;
   margin-top: 20px;
 }
 
 footer .section-footer ul li a li {
   color: lightgray;
+  text-transform: capitalize;
   font-weight: 100;
 }
 
@@ -150,6 +151,7 @@ footer .btn-social-footer .btn-social .social {
 
 footer .btn-social-footer .btn-social .social img {
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 footer .btn-social-footer .btn-social .social span {

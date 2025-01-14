@@ -11,8 +11,6 @@
 //   { id: 10, label: "shop", url: "#", active: false }
 // ];
 
-
-
 const Header = (props) => {
   const { links } = props;
   return (

@@ -1,54 +1,27 @@
 
-const Footer = () => {
+const Footer = (props) => {
+  const { links } = props;
   return (
     <footer>
       <section className="section-footer container">
         <div className="list-footer">
-          <ul>
-            <li><a href="#">
-              <h4>DC comics</h4>
-              <li>characters</li>
-              <li>comics</li>
-              <li>movies</li>
-              <li>TV</li>
-              <li>Games</li>
-              <li>Videos</li>
-              <li>News</li>
-            </a></li>
+          <ul className="columns">
+            {links.map((item) => (
+              <li key={`footer-link-${item.id}`}>
+                <a href="#">
+                  <h4>{item.title}</h4>
 
-            <li><a href="#">
-              <h4>shop</h4>
-              <li>Shop DC</li>
-              <li>Shop DC Collectibles</li>
-            </a></li>
-          </ul>
-          <ul>
-            <li><a href="#">
-              <h4>dc</h4>
-              <li>term of use</li>
-              <li>privacy policy (new)</li>
-              <li>ad choices</li>
-              <li>advertising</li>
-              <li>jobs</li>
-              <li>subscription</li>
-              <li>talent workshops</li>
-              <li>CPSC certificates</li>
-              <li>ratings</li>
-              <li>shop help</li>
-              <li>contact us</li>
-            </a></li>
-          </ul>
-          <ul>
-            <li><a href="#">
-              <h4>sites</h4>
-              <li>DC</li>
-              <li>MAD magazines</li>
-              <li>DC Kids</li>
-              <li>DC Universe</li>
-              <li>DC Power Visa</li>
-            </a></li>
+                  {item.items.map((secItem, index) => (
+                    <li key={index}>{secItem}</li>
+                  ))}
+
+
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
+
         <div className="img-footer">
           <img src="src/img/dc-logo-bg.png" alt="Logo DC" />
         </div>

@@ -15,13 +15,66 @@ const headerLinks = [
   { id: 10, label: "shop", url: "#", active: false }
 ];
 
+const FooterMenuData = [
+  {
+    id: 1,
+    title: "DC comics",
+    items: [
+      "characters",
+      "comics",
+      "movies",
+      "TV",
+      "Games",
+      "Videos",
+      "News"
+    ]
+  },
+  {
+    id: 2,
+    title: "shop",
+    items: [
+      "Shop DC",
+      "Shop DC Collectibles"
+    ]
+  },
+  {
+    id: 3,
+    title: "dc",
+    items: [
+      "term of use",
+      "privacy policy (new)",
+      "ad choices",
+      "advertising",
+      "jobs",
+      "subscription",
+      "talent workshops",
+      "CPSC certificates",
+      "ratings",
+      "shop help",
+      "contact us"
+    ]
+  },
+  {
+    id: 4,
+    title: "sites",
+    items: [
+      "DC",
+      "MAD magazines",
+      "DC Kids",
+      "DC Universe",
+      "DC Power Visa"
+    ]
+  }
+];
+
+
 
 const App = () => {
   return (
     <>
       <Header links={headerLinks} />
       <Main />
-      <Footer />
+      <Footer links={FooterMenuData} />
     </>
   )
 }

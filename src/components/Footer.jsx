@@ -1,21 +1,62 @@
 
 const Footer = (props) => {
-  const { links } = props;
+  const { footerInfo, linksOne, linksTwo, linksThree } = props;
   return (
     <footer>
+      <section className="info-main">
+        <ul className="container">
+          {footerInfo.map((item, index) => (
+            <li key={`footer-info-link-${item.id}`}>
+              <a href="#">
+                <img src={item.imgSrc} alt={item.alt} />
+                <span>{item.text}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
       <section className="section-footer container">
         <div className="list-footer">
-          <ul className="columns">
-            {links.map((item) => (
+          <ul>
+            {linksOne.map((item) => (
               <li key={`footer-link-${item.id}`}>
                 <a href="#">
                   <h4>{item.title}</h4>
+                  <ul>
+                    {item.items.map((secItem, index) => (
+                      <li key={index}>{secItem}</li>
+                    ))}
+                  </ul>
+                </a>
+              </li>
+            ))}
+          </ul>
 
-                  {item.items.map((secItem, index) => (
-                    <li key={index}>{secItem}</li>
-                  ))}
+          <ul>
+            {linksTwo.map((item) => (
+              <li key={`footer-link-${item.id}`}>
+                <a href="#">
+                  <h4>{item.title}</h4>
+                  <ul>
+                    {item.items.map((secItem, index) => (
+                      <li key={index}>{secItem}</li>
+                    ))}
+                  </ul>
+                </a>
+              </li>
+            ))}
+          </ul>
 
-
+          <ul>
+            {linksThree.map((item) => (
+              <li key={`footer-link-${item.id}`}>
+                <a href="#">
+                  <h4>{item.title}</h4>
+                  <ul>
+                    {item.items.map((secItem, index) => (
+                      <li key={index}>{secItem}</li>
+                    ))}
+                  </ul>
                 </a>
               </li>
             ))}

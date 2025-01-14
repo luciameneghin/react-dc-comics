@@ -15,7 +15,43 @@ const headerLinks = [
   { id: 10, label: "shop", url: "#", active: false }
 ];
 
-const FooterMenuData = [
+const footerInfo = [
+  {
+    id: 1,
+    imgSrc: "src/img/buy-comics-digital-comics.png",
+    alt: "logo digital comics",
+    text: "digital comics"
+  },
+  {
+    id: 2,
+    imgSrc: "src/img/buy-comics-merchandise.png",
+    alt: "logo digital comics",
+    text: "dc merchandise"
+  },
+  {
+    id: 3,
+    imgSrc: "src/img/buy-comics-subscriptions.png",
+    alt: "logo digital comics",
+    text: "subscription"
+  },
+  {
+    id: 4,
+    imgSrc: "src/img/buy-comics-shop-locator.png",
+    alt: "logo digital comics",
+    text: "comic shop locator"
+  },
+  {
+    id: 5,
+    imgSrc: "src/img/buy-dc-power-visa.svg",
+    alt: "logo digital comics",
+    text: "dc power visa"
+  }
+];
+
+
+
+
+const FooterMenuDataOne = [
   {
     id: 1,
     title: "DC comics",
@@ -36,7 +72,10 @@ const FooterMenuData = [
       "Shop DC",
       "Shop DC Collectibles"
     ]
-  },
+  }
+];
+
+const FooterMenuDataTwo = [
   {
     id: 3,
     title: "dc",
@@ -53,7 +92,9 @@ const FooterMenuData = [
       "shop help",
       "contact us"
     ]
-  },
+  }
+]
+const FooterMenuDataThree = [
   {
     id: 4,
     title: "sites",
@@ -65,16 +106,13 @@ const FooterMenuData = [
       "DC Power Visa"
     ]
   }
-];
-
-
-
+]
 const App = () => {
   return (
     <>
       <Header links={headerLinks} />
       <Main />
-      <Footer links={FooterMenuData} />
+      <Footer footerInfo={footerInfo} linksOne={FooterMenuDataOne} linksTwo={FooterMenuDataTwo} linksThree={FooterMenuDataThree} />
     </>
   )
 }

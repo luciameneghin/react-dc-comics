@@ -34,7 +34,7 @@ header .list-header ul li a {
 }
 
 header .list-header ul li a:hover,
-header .list-header ul li a:active {
+header .list-header ul li a.active {
   color: #0082F9;
   padding-bottom: 52px;
   border-bottom: 5px solid #0082F9;
@@ -83,6 +83,8 @@ main .info-main ul li a img {
   height: 50px;
   padding-right: 10px;
 }
+
+
 
 /* footer */
 footer {

@@ -46,6 +46,10 @@ header .list-header ul li a.active {
 main .img-jumb {
   height: 450px;
   background-image: url(src/img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0 0;
 }
 
 
@@ -120,10 +124,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-footer img {
-  /* object-fit: fill; */
+  background-color: #303030;
 }
 
 footer .info-main {

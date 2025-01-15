@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -43,24 +43,92 @@ header .list-header ul li a.active {
 
 
 /* main */
+main .img-jumb {
+  height: 450px;
+  background-image: url(src/img/jumbotron.jpg);
+}
+
 
 main .content-main {
+  position: relative;
   background-color: #1C1C1C;
   padding: 30px;
   margin: 0 auto;
   color: white;
   font-size: 3rem;
+  padding-left: 0;
+}
+
+main .content-main .info-page {
+  position: absolute;
+  top: -25px;
+  left: 320px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #0082F9;
+  padding: 0 40px;
+}
+
+main .container-main .comicList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+main .container-main .comicList .com-card {
+  width: 185px;
+  height: 250px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+main .container-main .comicList .com-card img {
+  height: 185px;
+  width: 185px;
+  object-position: 0 0;
+  object-fit: cover;
+}
+
+main .container-main .comicList .com-card h3 {
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  width: 150px;
+  padding: 20px 0 40px;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+main .content-main .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+main .content-main .load-more {
+  background-color: #0082F9;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 0 70px;
 }
 
 /* footer */
 footer {
   background-image: url(src/img/footer-bg.jpg);
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+footer img {
+  /* object-fit: fill; */
 }
 
 footer .info-main {
   background-color: #0082F9;
-  height: 160px;
+  padding-bottom: 50px;
 }
 
 footer .info-main ul {
@@ -105,26 +173,6 @@ footer .section-footer .list-footer {
 footer .section-footer .list-footer ul {
   padding: 0;
 }
-
-/* footer .section-footer .list-footer ul>li:nth-child(1) {
-
-  background-color: yellow;
-}
-
-footer .section-footer .list-footer ul>li:nth-child(2) {
-
-  background-color: beige;
-}
-
-footer .section-footer .list-footer ul>li:nth-child(3) {
-
-  background-color: red;
-}
-
-footer .section-footer .list-footer ul>li:nth-child(4) {
-
-  background-color: green;
-} */
 
 footer .section-footer .img-footer {
   margin: -100px;
@@ -176,6 +224,7 @@ footer .btn-social-footer .btn-social .social {
 
 footer .btn-social-footer .btn-social .social img {
   margin-right: 20px;
+  margin-top: -15px;
 }
 
 footer .btn-social-footer .btn-social .social span {

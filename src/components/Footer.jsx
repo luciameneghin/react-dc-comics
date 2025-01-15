@@ -1,4 +1,3 @@
-
 const Footer = (props) => {
   const { footerInfo, linksOne, linksTwo, linksThree } = props;
   return (
